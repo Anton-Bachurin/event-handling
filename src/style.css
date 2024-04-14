@@ -1,0 +1,48 @@
+body {
+    background: #556B2F;
+    color: black;
+    cursor: none;
+}
+
+.cursor {
+    height: 100px;
+    width: 100px;    
+    pointer-events: none;
+    position: absolute;
+    background-image: url('./images/hummer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.game-board {
+    width: 750px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hole {
+    width: 140px;
+    height: 140px;
+    margin: 0 15px 30px;
+    background: black;
+    border-radius: 50%;
+    border: solid white 5px;
+}
+
+.with-goblin {
+    background-image: url(images/goblin.png);
+    background-position: center center;
+    background-size: contain;
+}
+
+.status {
+    margin-bottom: 20px; 
+    color: white;
+    font-size: 28px;
+    padding-left: 20px;
+}
